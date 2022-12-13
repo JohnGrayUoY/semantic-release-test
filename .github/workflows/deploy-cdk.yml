@@ -40,11 +40,7 @@ jobs:
         with:
           semantic_version: 19
           dry_run: false
-          branches: |
-            [
-              "main",
-              "staging"
-            ]
+          branches: "staging"
           extra_plugins: |
             @semantic-release/changelog
             @semantic-release/git
