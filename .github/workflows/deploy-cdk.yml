@@ -45,10 +45,11 @@ jobs:
             @semantic-release/changelog
             @semantic-release/git
 
-      - name: Merge production To staging
+      - name: Merge production to staging
         uses: devmasx/merge-branch@master
         with:
           type: now
+          message: "Deploy: Merge production to staging"
           from_branch: production
           target_branch: staging
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -57,6 +58,7 @@ jobs:
         uses: devmasx/merge-branch@master
         with:
           type: now
+          message: "Deploy: Merge staging to main"
           from_branch: staging
           target_branch: main
           github_token: ${{ secrets.GITHUB_TOKEN }}
