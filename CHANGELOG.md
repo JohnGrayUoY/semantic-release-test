@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/JohnGrayUoY/semantic-release-test/compare/v1.1.3...v1.1.4) (2022-12-14)
+
+
+### Bug Fixes
+
+* **TEST-12:** Fixed skip messages ([c90e528](https://github.com/JohnGrayUoY/semantic-release-test/commit/c90e528a3dd5176b50e3bfbf0c3bb8c8de78afbf))
+
 ## [1.1.3](https://github.com/JohnGrayUoY/semantic-release-test/compare/v1.1.2...v1.1.3) (2022-12-14)
 
 
