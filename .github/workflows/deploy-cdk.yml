@@ -14,9 +14,7 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    if:
-      "(github.ref_name == 'staging' && !contains(github.event.head_commit.message, 'skip ci staging')) ||
-      (github.ref_name == 'production' && !contains(github.event.head_commit.message, 'skip ci production'))"
+    if: "(github.ref_name == 'staging' && !contains(github.event.head_commit.message, 'skip ci')) || github.ref_name == 'production'"
     environment: ${{github.ref_name}}
     steps:
       - name: Checkout branch
@@ -42,6 +40,23 @@ jobs:
         with:
           semantic_version: 19
           dry_run: false
+          branches: "production"
           extra_plugins: |
             @semantic-release/changelog
             @semantic-release/git
+
+      - name: Merge production To staging
+        uses: devmasx/merge-branch@master
+        with:
+          type: now
+          target_branch: production
+          target_branch: staging
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Merge staging to main 
+        uses: devmasx/merge-branch@master
+        with:
+          type: now
+          target_branch: staging
+          target_branch: main
+          github_token: ${{ secrets.GITHUB_TOKEN }}
