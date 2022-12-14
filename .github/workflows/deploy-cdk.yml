@@ -49,14 +49,14 @@ jobs:
         uses: devmasx/merge-branch@master
         with:
           type: now
-          target_branch: production
+          from_branch: production
           target_branch: staging
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Merge staging to main 
+      - name: Merge staging to main
         uses: devmasx/merge-branch@master
         with:
           type: now
-          target_branch: staging
+          from_branch: staging
           target_branch: main
           github_token: ${{ secrets.GITHUB_TOKEN }}
