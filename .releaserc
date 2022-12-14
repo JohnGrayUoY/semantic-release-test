@@ -28,11 +28,11 @@
   "branches": [
     {
       "name": "staging",
-      "channel": "channel-staging"
+      "channel": "staging"
     },
     {
       "name": "production",
-      "channel": "channel-production"
+      "channel": "production"
     }
   ]
 }

@@ -14,7 +14,9 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, 'skip ci')"
+    if:
+      "(github.ref_name == 'staging' && !contains(github.event.head_commit.message, 'skip ci staging')) ||
+      (github.ref_name == 'production' && !contains(github.event.head_commit.message, 'skip ci production'))"
     environment: ${{github.ref_name}}
     steps:
       - name: Checkout branch
