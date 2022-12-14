@@ -1,3 +1,11 @@
+## [1.1.5](https://github.com/JohnGrayUoY/semantic-release-test/compare/v1.1.4...v1.1.5) (2022-12-14)
+
+
+### Bug Fixes
+
+* **TEST-12:** SR on prod ([94f6c12](https://github.com/JohnGrayUoY/semantic-release-test/commit/94f6c1218a4925dfd5252c285ed0f9750f48508b))
+* **TEST-13:** Fix syntax for merge ([f36d683](https://github.com/JohnGrayUoY/semantic-release-test/commit/f36d68373bdfe62529d8ab94888dd1473a4896a0))
+
 ## [1.1.4](https://github.com/JohnGrayUoY/semantic-release-test/compare/v1.1.3...v1.1.4) (2022-12-14)
 
 
