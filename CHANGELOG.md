@@ -1,3 +1,11 @@
+## [1.1.6](https://github.com/JohnGrayUoY/semantic-release-test/compare/v1.1.5...v1.1.6) (2022-12-14)
+
+
+### Bug Fixes
+
+* **TEST-14:** Trigger new release ([d7080c0](https://github.com/JohnGrayUoY/semantic-release-test/commit/d7080c0691ba5d0be9beed89d2987344cabc5c73))
+* **TEST-15:** Commit message for merges ([c7141c8](https://github.com/JohnGrayUoY/semantic-release-test/commit/c7141c86e21c8ca0c1e477b2a4319c88b82cc4a7))
+
 ## [1.1.5](https://github.com/JohnGrayUoY/semantic-release-test/compare/v1.1.4...v1.1.5) (2022-12-14)
 
 
