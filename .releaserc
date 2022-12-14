@@ -24,5 +24,15 @@
         "message": "chore(release): ${nextRelease.version} [skip ci ${nextRelease.channel}]"
       }
     ]
+  ],
+  "branches": [
+    {
+      "name": "staging",
+      "channel": "channel-staging"
+    },
+    {
+      "name": "production",
+      "channel": "channel-production"
+    }
   ]
 }
